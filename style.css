@@ -1,0 +1,44 @@
+.centered{
+    text-align: center;
+}
+
+.white-text{
+    
+    color: white;
+    text-decoration: none;
+    -webkit-text-stroke: 0.5px black;
+}
+
+.graphite-grey{
+    background: #0e0e0e; 
+}
+
+.main-banner{
+ height: 160px; 
+ object-fit: cover;  
+object-position: center calc(-125px); /* center calc helps you offset the center pos by % or + - amount of "combined" */
+}
+
+.main-background{
+    background: #1f1e1c;
+}
+
+.lt-backpadded{
+    transform: translateY(-25px);
+}
+
+.keolamation-banner{
+    height: 50px;
+    width: 200px;
+    object-position: center calc(+10px);
+    transform: translateX(-10px);
+    padding-right: 25px;
+
+}
+
+.banner-text{
+    display: inline-block; /* Required for transform to work on a span */
+  transform: translateY(-10px);
+  padding-right: 100px;
+  
+}
