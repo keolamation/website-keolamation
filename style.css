@@ -6,7 +6,7 @@
     
     color: white;
     text-decoration: none;
-    -webkit-text-stroke: 0.5px black;
+   /* -webkit-text-stroke: 0.3px black; */
 }
 
 .graphite-grey{
@@ -39,6 +39,19 @@ object-position: center calc(-125px); /* center calc helps you offset the center
 .banner-text{
     display: inline-block; /* Required for transform to work on a span */
   transform: translateY(-10px);
-  padding-right: 100px;
+  /*padding-right: 100px;*/
   
+}
+
+/* On desktop, keep it inline (does nothing) */
+.mobile-break {
+  display: inline;
+}
+
+/* On screens narrower than 780px, force it to behave like a <br> */
+@media (max-width: 800px) {
+  .mobile-break {
+    display: block;
+    height: 20px; /* Gives you control over the exact padding gap */
+  }
 }
